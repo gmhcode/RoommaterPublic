@@ -1,0 +1,109 @@
+//
+//  PlaceController.swift
+//  Roommate Tracker
+//
+//  Created by Greg Hughes on 1/14/19.
+//  Copyright © 2019 Greg Hughes. All rights reserved.
+//
+
+import Foundation
+import Firebase
+
+class PlaceController {
+    
+    static let shared = PlaceController()
+    
+    var currentPlace : Place?
+    var inviteCode : String?
+    
+    func createPlace(adminUid: String, placeName: String, completion: @escaping (Bool)->()) {
+        
+        let newPlace = Place(placeName: placeName, adminUid: adminUid)
+        
+        let dbref = FirebaseController.db.collection("places").document()
+        
+        FirebaseController.save(object: newPlace, to: dbref) { (success) in
+            if success {
+                self.currentPlace = newPlace
+                completion(true)
+            }
+            completion(false)
+        }
+    }
+    
+    func deletePlace(place: Place, completion: @escaping (Bool)->()){
+        
+<<<<<<< HEAD
+        let dbrefPlaceToDeleteUID = FirebaseController.db.collection("places").document(place.uid)
+=======
+        // TODO : Join a place with an invitation code
+        func invite(place: Place, user: InternalUser, completion: @escaping (Bool)->()){
+            
+//            let invitationUid = UUID().uuidString
+//            
+//            let firstFiveOfCode = String(Array(invitationUid)[0...4])
+            
+            let newInvite = Invitation(invitationIsOpen: true, place: place)
+            
+            inviteCode = newInvite.inviteCode
+            
+            
+            
+            
+            
+        }
+        
+        
+        
+        func deletePlace(place: Place, completion: @escaping (Bool)->()){
+            
+            let dbrefPlaceToDeleteUID = FirebaseController.db.collection("places").document(place.uid)
+            
+            dbrefPlaceToDeleteUID.delete()
+            completion(true)
+        }
+        
+        
+        
+        
+        
+        // TODO : 
+        
+>>>>>>> e85ac522b2e8c4fef371e1f9693c9d43f7f54aa9
+        
+        dbrefPlaceToDeleteUID.delete()
+        completion(true)
+    }
+    
+    func fetchPlace(withUid uid: String, completion: @escaping (Place?) -> ()) {
+        let query = FirebaseController.db.collection("places").whereField("uid", isEqualTo: uid)
+        FirebaseController.fetch(withQuery: query) { (places) in
+            if !places.isEmpty {
+                let place = Place(withDict: places[0].data())
+                completion(place)
+            } else {
+                completion(nil)
+            }
+        }
+    }
+    
+    // TODO :
+    
+    
+    func leaveAPlace(place: Place, completion: @escaping (String?)->()){
+        
+        // TODO: leave on firebase
+        
+    }
+    
+    //        func deletePlace(placeToDelete: Place){
+    //
+    //            guard let index = places?.index(of: placeToDelete) else { return }
+    //
+    //            places?.remove(at: index)
+    //
+    //            // TODO: delete from firebase
+    //
+    //        }
+    
+}

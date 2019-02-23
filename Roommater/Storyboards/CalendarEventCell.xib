@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="URX-Se-IcG" customClass="CalendarTableViewCell" customModule="Roommater" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="URX-Se-IcG" id="lJR-Ct-TPf">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="96.666666666666671"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="v4f-KH-dWN">
+                        <rect key="frame" x="52" y="30.333333333333329" width="359" height="36"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NbP-gR-4gf">
+                                <rect key="frame" x="0.0" y="0.0" width="55" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="beg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3w8-uS-Xpa">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qo-7V-HE9">
+                                        <rect key="frame" x="0.0" y="22.000000000000004" width="55" height="13.999999999999996"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="YK7-Cd-XZd"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWm-J4-ffv">
+                                <rect key="frame" x="70" y="0.0" width="8" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.052997168660000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Vuh-wp-E9R"/>
+                                    <constraint firstAttribute="width" constant="8" id="sZh-jU-KZI"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-Iu-wEM">
+                                <rect key="frame" x="93" y="0.0" width="180" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="asd" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA4-s6-1Xh">
+                                        <rect key="frame" x="0.0" y="0.0" width="24.333333333333332" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="260" id="PuM-EW-pKs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFontEmphasized" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="sad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kV5-c5-hns">
+                                        <rect key="frame" x="0.0" y="19.000000000000004" width="24.333333333333332" height="16.999999999999996"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="cz5-hp-vC7"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="phx-ea-VvG">
+                                <rect key="frame" x="288" y="8.0000000000000036" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8u7-z3-cAt"/>
+                                    <constraint firstAttribute="width" constant="20" id="jVt-fT-N6p"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit" translatesAutoresizingMaskIntoConstraints="NO" id="Dyb-34-QG3">
+                                <rect key="frame" x="323" y="0.0" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="07e-2S-Q2O"/>
+                                    <constraint firstAttribute="height" constant="36" id="Odk-E2-wL3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NbP-gR-4gf" firstAttribute="bottom" secondItem="cWm-J4-ffv" secondAttribute="bottom" id="IAI-K5-yxf"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v4f-KH-dWN" firstAttribute="centerX" secondItem="lJR-Ct-TPf" secondAttribute="centerX" constant="0.5" id="R7Y-YI-nxJ"/>
+                    <constraint firstItem="v4f-KH-dWN" firstAttribute="centerY" secondItem="lJR-Ct-TPf" secondAttribute="centerY" id="m6N-4V-zWc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="beginningTimeLabel" destination="3w8-uS-Xpa" id="QG1-ym-iEO"/>
+                <outlet property="doNotDisturbImage" destination="phx-ea-VvG" id="3i3-Xp-aAB"/>
+                <outlet property="endingTimeLabel" destination="5qo-7V-HE9" id="YVY-Wi-WnW"/>
+                <outlet property="eventColorBar" destination="cWm-J4-ffv" id="j1K-jB-tnp"/>
+                <outlet property="eventNameLabel" destination="WA4-s6-1Xh" id="Rfq-dA-vwE"/>
+                <outlet property="eventSpaceLabel" destination="kV5-c5-hns" id="CWu-tr-I3e"/>
+                <outlet property="profilePicture" destination="Dyb-34-QG3" id="50Z-i3-NkU"/>
+            </connections>
+            <point key="canvasLocation" x="-296" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit" width="22.666666030883789" height="23.333333969116211"/>
+    </resources>
+</document>

@@ -1,0 +1,30 @@
+//
+//  Event.swift
+//  Roommate Tracker
+//
+//  Created by Greg Hughes on 1/14/19.
+//  Copyright © 2019 Greg Hughes. All rights reserved.
+//
+
+import Foundation
+
+class Event{
+    
+    let name: String
+    let creatorUid: String
+    let date: Date
+    let uid: String
+    
+    init(name: String, creatorUid: String, date: Date, uid: String = UUID().uuidString) {
+        self.name = name
+        self.creatorUid = creatorUid
+        self.date = date
+        self.uid = uid
+    }
+<<<<<<< HEAD
+=======
+    
+    
+    
+>>>>>>> e85ac522b2e8c4fef371e1f9693c9d43f7f54aa9
+}

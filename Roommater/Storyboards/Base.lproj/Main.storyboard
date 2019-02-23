@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PtX-fP-yeB">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="bb2-jI-U4a">
+            <objects>
+                <viewController id="PtX-fP-yeB" customClass="SignInViewController" customModule="Roommater" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y1j-R1-tgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gabble" translatesAutoresizingMaskIntoConstraints="NO" id="JW3-cT-gqr">
+                                <rect key="frame" x="75.666666666666686" y="204" width="224" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="4Io-Zw-8a8"/>
+                                    <constraint firstAttribute="width" constant="224" id="jtD-uc-Y6N"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8b7-Oq-g1F">
+                                <rect key="frame" x="32" y="357" width="311" height="401"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cH3-fB-hA9">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="56.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1e-8O-DjK">
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="16"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                <color key="textColor" red="0.2156862745" green="0.86666666670000003" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uw4-xS-gfb">
+                                                <rect key="frame" x="0.0" y="18.000000000000004" width="311" height="38.333333333333343"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="W2c-gW-Jo9">
+                                        <rect key="frame" x="0.0" y="86.333333333333314" width="311" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqw-8H-ton" userLabel="Password">
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="16"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                <color key="textColor" red="0.2156862745" green="0.86666666670000003" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YCY-Tb-ijq">
+                                                <rect key="frame" x="0.0" y="18" width="311" height="38"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m48-28-Wno">
+                                        <rect key="frame" x="0.0" y="172.33333333333337" width="311" height="56.333333333333343"/>
+                                        <color key="backgroundColor" red="0.8666666666666667" green="0.99215686274509807" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
+                                        <state key="normal" title="SIGN IN">
+                                            <color key="titleColor" red="0.2156862745" green="0.86666666670000003" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInButtonTapped:" destination="PtX-fP-yeB" eventType="touchUpInside" id="IvA-Qt-2P7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzF-Gm-cd8">
+                                        <rect key="frame" x="0.0" y="258.66666666666663" width="311" height="56"/>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.86666666670000003" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="16"/>
+                                        <state key="normal" title="SIGN UP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="NvG-89-Bf0" kind="show" id="VMv-QJ-jav"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS7-Rs-QD0">
+                                        <rect key="frame" x="0.0" y="344.66666666666663" width="311" height="56.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <state key="normal" title="Forgot Password?">
+                                            <color key="titleColor" red="0.88235294117647056" green="0.61568627450980395" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JW3-cT-gqr" firstAttribute="centerX" secondItem="XTa-Yp-Z5m" secondAttribute="centerX" id="Ht6-GZ-Asu"/>
+                            <constraint firstItem="JW3-cT-gqr" firstAttribute="top" relation="lessThanOrEqual" secondItem="XTa-Yp-Z5m" secondAttribute="top" constant="160" id="Slf-Mj-BNs"/>
+                            <constraint firstItem="XTa-Yp-Z5m" firstAttribute="trailing" secondItem="8b7-Oq-g1F" secondAttribute="trailing" constant="32" id="fZP-Zq-BK9"/>
+                            <constraint firstItem="8b7-Oq-g1F" firstAttribute="leading" secondItem="XTa-Yp-Z5m" secondAttribute="leading" constant="32" id="hxW-x6-xuY"/>
+                            <constraint firstItem="8b7-Oq-g1F" firstAttribute="top" relation="lessThanOrEqual" secondItem="JW3-cT-gqr" secondAttribute="bottom" constant="70" id="nH3-ug-YKc"/>
+                            <constraint firstItem="XTa-Yp-Z5m" firstAttribute="bottom" secondItem="8b7-Oq-g1F" secondAttribute="bottom" constant="20" id="qXM-Ny-X0v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XTa-Yp-Z5m"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Uw4-xS-gfb" id="mkX-vR-PFg"/>
+                        <outlet property="passwordTextField" destination="YCY-Tb-ijq" id="Q04-LS-SMo"/>
+                        <segue destination="J9w-kW-t45" kind="show" identifier="signIn" id="cQY-gw-eFv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="clH-J4-k6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.8" y="-2472.4137931034484"/>
+        </scene>
+        <!--ShoppingList-->
+        <scene sceneID="T4P-Xz-pml">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShoppingList" id="NZM-fL-3Nd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="F4a-jN-WgM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxv-h0-48D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237" y="-1878"/>
+        </scene>
+        <!--UINavigationController-3YC-BI-Bu1-->
+        <scene sceneID="qCu-Vx-E0O">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MyHome" storyboardName="MyHome" referencedIdentifier="UINavigationController-3YC-BI-Bu1" id="5bF-dL-TqC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="aCa-iV-3bD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ku6-Ok-xqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3052" y="-1896"/>
+        </scene>
+        <!--AdminRoommatesViewController-->
+        <scene sceneID="pn4-xa-BaB">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AdminRoommatesViewController" storyboardName="MyHome" referencedIdentifier="AdminRoommatesViewController" id="B4c-00-nUJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKX-RX-vNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4242" y="-1018"/>
+        </scene>
+        <!--RoommatesViewController-->
+        <scene sceneID="7LI-m0-y8s">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RoommatesViewController" storyboardName="MyHome" referencedIdentifier="RoommatesViewController" id="UtU-34-o40" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89C-hJ-vDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4679" y="-1018"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="4Xn-23-ggG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="kju-K0-V5Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="xm7-Cy-Oq5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5LU-6f-kde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3448" y="-1966"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="w4B-E7-hxo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Calendar" id="XD7-TJ-6BL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bux-bG-42i"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ll-5g-9r8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3662" y="-1999"/>
+        </scene>
+        <!--Tasks-->
+        <scene sceneID="Snm-og-Rch">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tasks" id="mJ9-L9-JEQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TLE-nP-BWL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v74-Hl-8di" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2585" y="-1878"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="M3U-No-MNK">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SignUp" storyboardName="SignUp" id="NvG-89-Bf0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbe-in-CMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="-1896"/>
+        </scene>
+        <!--tabBar-->
+        <scene sceneID="8Qm-wV-SCy">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="tabBar" storyboardName="tabBar" id="J9w-kW-t45" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="48I-iZ-pLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="-2471"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gabble" width="224" height="84"/>
+    </resources>
+</document>
